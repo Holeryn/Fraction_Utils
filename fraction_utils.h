@@ -9,46 +9,41 @@ typedef struct{
 
 /************************************
  * mcd : calcola l'mcd di a e b     *
- * returns : int (l'mcd)            *
+ * returns : int ì                  *
  ************************************/
 int mcd(int a,int b);
 
 /************************************
  * mcm : calcola l'mcm di a e b     *
- * returns : int (l'mcm)            *
+ * returns : int                   *
  ************************************/
 int mcm(int a,int b);
 
 /************************************
  * sum:fraction: calcola la somma   *
  * tra f1 e f2                      *
- * returns: fraction (la somma tra  *
- * le due frazioni)                 *
- *************************************/
+ * returns: fraction                *
+ ************************************/
 fraction sum_fraction(fraction f1,fraction f2);
 
 /************************************
  * sottract_fraction: calcola la    *
  * sottrazione tra due frazioni     *
- * returns: fraction (la            *
- * sottrazione tra le due frazioni) *
+ * returns: fraction                *
  ************************************/
 fraction sottract_fraction(fraction f1,fraction f2);
 
 /************************************
  * multiply_fraction: calcola la    *
  * moltiplicazione tra due frazioni *
- * returns: fraction (la            *
- * moltiplicazione tra le due       *
- * frazione)                        *
+ * returns: fraction                *
  ************************************/
 fraction multiply_fraction(fraction f1,fraction f2);
 
 /************************************
  * divide_fraction: calcola la      *
  * divisione tra due frazioni.      *
- * returns: fraction (la divisione  *
- * le due frazioni)                 *
+ * returns: fraction                *
  ************************************/
 fraction divide_fraction(fraction f1, fraction f2);
 
