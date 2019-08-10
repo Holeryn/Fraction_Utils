@@ -1,22 +1,11 @@
 #include <stdio.h>
-
-typedef struct{
-    int numerator;
-    int denominator;
-}fration;
-
-int mcd(int a,int b);
-int mcm(int a,int b);
-fration sum_fraction(fration f1,fration f2);
-fration sottract_fraction(fration f1,fration f2);
-fration multiply_fraction(fration f1,fration f2);
-fration divide_fraction(fration f1, fration f2);
+#include "fraction_utils.h"
 
 int main(void)
 {
-    fration s;
-    fration s2; 
-    fration result;
+    fraction s;
+    fraction s2; 
+    fraction result;
 
     int mcd_value;
     int type;
@@ -77,43 +66,4 @@ int mcd(int a, int b)
     }
 
     return a;
-}
-
-int mcm(int a, int b)
-{
-    return (a*b)/mcd(a,b);
-}
-
-fration sum_fraction(fration f1, fration f2)
-{
-    int mcm_d = mcm(f1.denominator, f2.denominator);
-    fration f;
-    f.numerator = ((mcm_d / f1.denominator)*f1.numerator)+((mcm_d / f2.denominator)*f2.numerator);
-    f.denominator = mcm_d;
-    return f;
-}
-
-fration sottract_fraction(fration f1, fration f2)
-{
-    int mcm_d = mcm(f1.denominator, f2.denominator);
-    fration f;
-    f.numerator = ((mcm_d / f1.denominator)*f1.numerator)-((mcm_d / f2.denominator)*f2.numerator);
-    f.denominator = mcm_d;
-    return f;
-}
-
-fration multiply_fraction(fration f1, fration f2)
-{
-    fration f;
-    f.numerator = f1.numerator * f2.numerator;
-    f.denominator = f1.denominator * f2.denominator;
-    return f;
-}
-
-fration divide_fraction(fration f1,fration f2)
-{
-    fration f;
-    f.numerator = f1.numerator * f2.denominator;
-    f.denominator = f1.denominator * f2.numerator;
-    return f;
 }
