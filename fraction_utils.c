@@ -1,9 +1,3 @@
-/*fraction_utils.c
-creatore_originale: holeryn
-data: 10 Agosto 2019
-Ora: 03:02 di notte
-*/
-
 #include <stdio.h>
 #include "fraction_utils.h"
 
