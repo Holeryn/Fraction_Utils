@@ -20,3 +20,7 @@ fr2.denominator = 6;*
 
 **sum_fraction(fr,fr2)**
 
+# Compilazione del programma di esempio con make
+
+
+*$ make all*
